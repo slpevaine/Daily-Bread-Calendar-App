@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  -webkit-app-region: drag;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 214px;
+  height: 228px;
+  padding: 12px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #d4a574 0%, #c8956a 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  gap: 8px;
+}
+
+button,
+input,
+textarea,
+select {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+
+.title {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 16px;
+  background: #fef3e6;
+  text-align: center;
+  
+  color: #e37373;
+  font-family: "Bagel Fat One", cursive;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#calendar {
+  width: 100%;
+  flex: 1;
+  padding: 16px 12px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffd6d6 0%, #ffe6f0 100%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+#day {
+  color: #6b4a3a;
+  font-family: "Bagel Fat One", cursive;
+  font-size: 85px;
+  font-weight: 400;
+  line-height: 0.9;
+  margin: 0;
+}
+
+#month {
+  color: #6b4a3a;
+  font-family: "Bagel Fat One", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
